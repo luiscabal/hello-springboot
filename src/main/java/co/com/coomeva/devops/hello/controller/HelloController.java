@@ -11,13 +11,13 @@ public class HelloController {
 	
 	@GetMapping
 	public String index() {
-		return "Hola desde Spring Boot Y Azure Cloud";
+		return "Hello from Spring boot and Azure Cloud";
 	}
 	
 	@GetMapping("/{name}")
 	public String index(@PathVariable("name") String name) {
 		int uno = sumar(1,2);
-		return "Hola "+name+" desde Spring Boot Y Azure Devops";
+		return "Hello "+name+" from Spring boot and Azure cloud";
 	}
 
 	public int sumar (int number1, int number2)
